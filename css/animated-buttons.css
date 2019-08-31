@@ -273,3 +273,9 @@ body {
   -o-transform: scale(1);
   opacity: 1;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: row;
+  }
+}

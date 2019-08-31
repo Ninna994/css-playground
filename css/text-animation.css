@@ -1,0 +1,119 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #272727;
+}
+
+html {
+  font-size: 10px;
+}
+
+*::selection {
+  background-color: none;
+}
+
+.nail {
+  position: absolute;
+  top: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  color: #272727;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+}
+
+
+.nail .vert {
+  position: absolute;
+  height: 50px;
+  width: 2px;
+  background-color: #272727;
+}
+
+.nail .hor {
+  position: absolute;
+  height: 50px;
+  width: 2px;
+  background-color: #272727;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+
+h1 {
+  display: block;
+  text-align: center;
+  color: transparent;
+  font-family: 'Archivo Black', sans-serif;
+  border: 1px solid #fff;
+  padding: 20px;
+  font-size: 13rem;
+  line-height: 13rem;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  text-shadow: 0 30px 5px rgba(0, 0, 0, .1);
+  background: url('../images/drawing.png');
+  background-size: cover;
+  animation: textbg 20s linear infinite, float 5s linear infinite alternate;
+  -webkit-animation: textbg 20s linear infinite, float 5s linear infinite alternate;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+}
+
+span {
+  font-size: 5rem;
+}
+
+@keyframes textbg {
+  from {
+    background-position: 0 0;
+  }
+
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes float {
+  from {
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+  }
+
+  to {
+    transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+  }
+}
+
+@media screen and (max-width:768px) {
+  html {
+    font-size: 3px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1120px) {
+  html {
+    font-size: 5px;
+  }
+}
